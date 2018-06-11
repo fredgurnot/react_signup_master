@@ -29,7 +29,7 @@ export default class Step2 extends Component {
                     placeholder="Last Name"
                     type="text"
                     handleChange={this.props.handleLastNameChange}
-                    errorMessage={this.props.errorMessageLastname}
+                    errorMessage={this.props.errorMessageLastName}
                     />
                     <Button className={styles.button__container}
                         name="sign up"

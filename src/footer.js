@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import Step1 from "./step1"
 import Step2 from "./step2"
+import Step3 from "./step3"
 
 import styles from './footer.css'
 
 
 const title = {
     initial: 'join the list',
-    success: 'congratualtions'
+    success: 'congratualtions!'
   };
 
   const messages = {
@@ -45,6 +46,12 @@ export default class Footer extends Component {
     handleSignUp = () => {
         if ((this.state.firstName !== "") && (this.state.lastName !== "")) {
             //submit name
+            this.setState({
+                errorMessageFirstName: "",
+                errorMessageLastName: "",
+                currentStep: 3,
+                success: true,
+            });
         }
         if (this.state.firstName === "") {
             this.setState({
@@ -77,6 +84,7 @@ export default class Footer extends Component {
         this.setState({
             firstName: newValue,
            nameFailure: false,
+           errorMessageFirstName: "",
         });
         }
 
@@ -85,6 +93,7 @@ export default class Footer extends Component {
             this.setState({
                 lastName: newValue,
                 nameFailure: false,
+                errorMessageLastName: "",
             });
             }
 
@@ -128,10 +137,12 @@ export default class Footer extends Component {
                     handleFistNameChange={this.handleFistNameChange}
                     handleLastNameChange={this.handleLastNameChange}
                     errorMessageFirstName={this.state.errorMessageFirstName}
-                    errorMessageLastname={this.state.errorMessageLastname}
+                    errorMessageLastName={this.state.errorMessageLastName}
                     handleSubmit={this.handleSignUp}
                 />
-                
+                 <Step3
+                    currentStep={this.state.currentStep}
+                />
 
                 
         

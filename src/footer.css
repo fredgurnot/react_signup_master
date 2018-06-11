@@ -43,6 +43,7 @@
   text-align: left;
   color: #b6fdbf;
   align-self: center;
+  padding: 20px 40px 20px;
 }
 
 .task__title {
@@ -58,12 +59,30 @@
   padding-bottom: 20px;
 }
 
+.task__title__end {
+  composes: task__title;
+  font-size: 32px;
+  padding-bottom: 10px;
+}
+
+.task_message_end {
+  font-family: AzoSans;
+  font-size: 26px;
+  font-weight: 300;
+  color: #94aebf;
+}
+
 .fields__container {
     display: flex;
     flex-direction: row;
     flex-flow: row;
     flex-wrap: wrap;
+    font-family: AzoSans;
+  font-size: 26px;
+  font-weight: 300;
+  
 }
+
 
 .legal {
     width: 380px;
@@ -82,7 +101,4 @@
 .legal__checkbox {
     float: left;
     margin-right: 10px;
-}
-.legal__copy {
-   
 }
