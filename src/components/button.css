@@ -1,0 +1,14 @@
+.button__container {
+    width: 149px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #ed1f34;
+  text-transform: uppercase;
+  font-family: AzoSans;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 50px;
+  align-self: flex-end;
+}
