@@ -11,13 +11,14 @@ export default class Input extends Component {
 
     handleEnterKey = evt => {
         if (evt.key === 'Enter') {
-          this.props.handleSubmit(this.input.value);
+            console.log('do validate');
+          this.props.handleSubmit();
         }
       };
       
     render() {
         return (
-            <div className={styles.input__container}>
+            <div className={styles[this.props.classContainer]}>
                 <div className={styles.errorClass}>{this.props.errorMessage}</div>
                 <input 
                     className={styles[this.props.classType]}
