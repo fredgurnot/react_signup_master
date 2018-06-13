@@ -1,12 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 
-## Run locally without installing all depencencies
-
-```sh
-cd build
-python -m SimpleHTTPServer 9000
-```
 
 
 
@@ -48,6 +42,14 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
+
+
+## Run build locally
+
+```sh
+cd build
+python -m SimpleHTTPServer 9000
+```
 
 
 
