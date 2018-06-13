@@ -2,6 +2,12 @@
     position: relative;
 }
 
+.input__container__name {
+    position: relative;
+    display: flex;
+    flex-basis: 47%;
+}
+
 .errorClass {
     text-align: left;
     color: red;
@@ -26,17 +32,42 @@
   text-align: left;
   color: #74727e;
   padding-left: 25px;
-  margin-right: 20px;
   margin-top: 2px;
 }
 
 .input__email {
     composes: input__generic;
     width: 480px;
+    margin-right: 20px;
 }
 
 .input__name {
     composes: input__generic;
-    width: 280px;
+    width: 180px;
   
+}
+
+@media screen and (max-width: 1024px) {
+    .input__email {
+        width: 304px;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .input__container {
+        margin: 10px auto;
+        width: 100%;
+    }
+    .input__container__name {
+        width: 50%;
+    }
+    .input__generic {
+        font-size: 14px
+    }
+    .input__email {
+        width: 92%;
+    }
+    .input__name {
+        width: 100%;
+    }
 }

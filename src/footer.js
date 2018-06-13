@@ -52,6 +52,8 @@ export default class Footer extends Component {
                 currentStep: 3,
                 success: true,
             });
+            console.log('email: ' + this.emailValue);
+            console.log('name: ' + this.firstName + " " + this.lastName);
         }
         if (this.state.firstName === "") {
             this.setState({

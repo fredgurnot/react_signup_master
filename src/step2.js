@@ -16,8 +16,9 @@ export default class Step2 extends Component {
         return(
             <div className={styles.task}>
                 <div className={styles.task__title}>Almost Done! Please Enter Your First and Last Name.</div>
-                <div className={styles.fields__container}>
+                <div className={styles.fields__container__step2}>
                     <Input 
+                    classContainer="input__container__name"
                     classType="input__name"
                     placeholder="First Name"
                     type="text"
@@ -25,6 +26,7 @@ export default class Step2 extends Component {
                     errorMessage={this.props.errorMessageFirstName}
                     />
                     <Input 
+                    classContainer="input__container__name"
                     classType="input__name"
                     placeholder="Last Name"
                     type="text"

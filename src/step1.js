@@ -16,9 +16,10 @@ export default class Step1 extends Component {
           
         return(
             <div className={styles.task}>
-                <div className={styles.task__title}>SIGN UP FOR THE TLC NEWSLETTER.</div>
+                <div className={styles.task__title}>SIGN UP FOR<span className={styles.line__break}></span> THE TLC NEWSLETTER.</div>
                 <div className={styles.fields__container}>
                     <Input 
+                    classContainer="input__container"
                     classType="input__email"
                     placeholder="enter email address"
                     type="email"
@@ -30,14 +31,15 @@ export default class Step1 extends Component {
                         name="next"
                         handleSubmit={this.props.handleSubmit}
                 />
-                </div>
-                
                 <div className={styles.legal}>
                     
                     <Checkbox className={styles.legal__checkbox}
                     checkboxHandler={this.props.handleAgree}/>
                     <div className={styles.legal__copy}>I agree to receive information from Discovery Communications in accordance with the following Privacy Policy</div>
                 </div>
+                </div>
+                
+                
             </div>
 
                 );
