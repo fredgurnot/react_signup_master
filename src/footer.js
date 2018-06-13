@@ -52,8 +52,8 @@ export default class Footer extends Component {
                 currentStep: 3,
                 success: true,
             });
-            console.log('email: ' + this.emailValue);
-            console.log('name: ' + this.firstName + " " + this.lastName);
+            console.log('email: ' + this.state.emailValue);
+            console.log('name: ' + this.state.firstName + " " + this.state.lastName);
         }
         if (this.state.firstName === "") {
             this.setState({
@@ -100,7 +100,7 @@ export default class Footer extends Component {
             }
 
       handleEmailSubmit = () => {
-          
+        console.log('handleEmailSubmit');
             let emailFailure = !emailReg.test(this.state.emailValue);
             let message = messages.requiredField;
             if (this.state.emailValue !== "") {

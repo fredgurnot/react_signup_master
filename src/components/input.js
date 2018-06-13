@@ -11,7 +11,8 @@ export default class Input extends Component {
 
     handleEnterKey = evt => {
         if (evt.key === 'Enter') {
-          this.props.handleSubmit(this.input.value);
+            console.log('do validate');
+          this.props.handleSubmit();
         }
       };
       

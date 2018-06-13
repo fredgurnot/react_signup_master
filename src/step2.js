@@ -24,6 +24,7 @@ export default class Step2 extends Component {
                     type="text"
                     handleChange={this.props.handleFistNameChange}
                     errorMessage={this.props.errorMessageFirstName}
+                    handleSubmit={this.props.handleSubmit}
                     />
                     <Input 
                     classContainer="input__container__name"
@@ -32,6 +33,7 @@ export default class Step2 extends Component {
                     type="text"
                     handleChange={this.props.handleLastNameChange}
                     errorMessage={this.props.errorMessageLastName}
+                    handleSubmit={this.props.handleSubmit}
                     />
                     <Button className={styles.button__container}
                         name="sign up"
