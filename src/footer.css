@@ -146,6 +146,7 @@
   .task__title {
     font-size: 20px;
   }
+
   .task__title__end {
     font-size: 24px;
   }
@@ -164,8 +165,14 @@
     width: 85%;
     flex-basis: 85%;
   }
+
+  .fields__container {
+    justify-content: center;
+  }
+
     .legal {
       align-self: baseline;
+      flex-basis: 76%;
     }
   
 }
